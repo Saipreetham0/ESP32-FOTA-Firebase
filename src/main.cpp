@@ -24,14 +24,12 @@ FirebaseConfig config;
 
 bool taskCompleted = false;
 
-const char *ssid = "KSP";
-const char *password = "9550421866";
+#include "secrets.h" // WiFi + Firebase credentials — copy include/secrets.h.example to include/secrets.h
 
-#define API_KEY "AIzaSyCiIG-sTPSX06NeqO1oKY45g6z1xxT56Lw" // Firebase: Define the API Key
-#define USER_EMAIL "device1@stabaka.com"                  // Firebase: Define the user Email
-#define USER_PASSWORD "MzfCtLPz!nJm7fPY"                  // Firebase: Define password
-#define STORAGE_BUCKET_ID "ksp-iot.appspot.com"           // Firebase: Define the Firebase storage bucket ID e.g bucket-name.appspot.com
-#define FIRMWARE_PATH "test/firmware.bin"
+const char *ssid = WIFI_SSID;
+const char *password = WIFI_PASSWORD;
+
+#define FIRMWARE_PATH "test/firmware.bin" // path of firmware file in the storage bucket
 const char *currentVersion = "1.0.0";
 // Firebase: Define the firmware path on Firebase
 
