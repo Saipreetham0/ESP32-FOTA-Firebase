@@ -1,5 +1,22 @@
 # ESP32 FOTA via Firebase Storage
 
+<p align="left">
+  <a href="https://github.com/Saipreetham0/ESP32-FOTA-Firebase/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/Saipreetham0/ESP32-FOTA-Firebase?style=social"></a>
+  <a href="https://github.com/Saipreetham0/ESP32-FOTA-Firebase/network/members"><img alt="Forks" src="https://img.shields.io/github/forks/Saipreetham0/ESP32-FOTA-Firebase?style=social"></a>
+  <img alt="License" src="https://img.shields.io/github/license/Saipreetham0/ESP32-FOTA-Firebase">
+</p>
+
+> ⭐ **Found this useful? Star the repo** — it helps other makers find it.
+
+## 📸 Demo
+
+<!-- Drop a wiring photo and a short demo GIF into docs/ then uncomment:
+![Demo](docs/demo.gif)
+![Wiring](docs/wiring.jpg)
+-->
+_Demo GIF and wiring photo coming soon._
+
+
 Firmware **O**ver-**T**he-**A**ir updates for ESP32 using **Firebase Cloud Storage** — no custom update server needed. The device checks a fixed path in your storage bucket at boot; if a `firmware.bin` is there, it downloads it, flashes itself, deletes the file, and reboots into the new firmware.
 
 ```
